@@ -1,0 +1,34 @@
+.excerciseDetail-cont{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding-left: 20px;
+}
+.excerciseDetail-header {
+    height: 500px;
+    width: 35%;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 675px){
+  .excerciseDetail-cont{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+    .excerciseDetail-header {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+
+}

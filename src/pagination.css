@@ -1,0 +1,115 @@
+.pagination-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.page-circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #795889;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.dots{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #795889;
+    cursor: pointer;
+}
+
+/* ---------- Exercise card layout fixes ---------- */
+
+/* make cards consistent boxes */
+.cards-container {
+  /* keep the same flex layout you already use */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start; /* align top so cards line up */
+  justify-content: center;
+  /* small padding so images don't hit edges on small screens */
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+/* card box */
+.exercise-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;              /* keep your chosen width */
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.12);
+  overflow: hidden;          /* important: hide image overflow */
+  min-height: 360px;         /* consistent card height */
+}
+
+/* Title (first text div inside card) - ensures wrapping and center */
+.exercise-card > div:first-child {
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-align: center;
+  word-break: break-word;    /* prevent overflow on long names */
+  padding: 0 6px;
+  color: #b68ec6;            /* tweak color to match your theme */
+}
+
+/* Meta lines (category, equipment) - keep small and centered */
+.exercise-card > div:nth-child(2),
+.exercise-card > div:nth-child(3) {
+  font-size: 13px;
+  opacity: 0.9;
+  text-align: center;
+  margin: 2px 0;
+  padding: 0 6px;
+}
+
+/* Image sizing: cover crop + fixed max height to avoid overflow */
+.exercise-card img {
+  width: 100%;
+  height: 220px;             /* controls how tall the image appears */
+  max-height: 220px;
+  object-fit: cover;         /* crop to fill without stretching */
+  border-radius: 4px;
+  display: block;
+  margin-top: 8px;
+  background: #222;          /* shows while image loads or if broken */
+}
+
+/* if gifUrl sometimes missing, avoid huge blank space by hiding missing imgs */
+.exercise-card img[src=""], 
+.exercise-card img[src="null"],
+.exercise-card img[src="undefined"],
+.exercise-card img[alt=""] {
+  display: none;
+}
+
+/* Pagination container margin */
+.pagination-container {
+  margin-top: 18px;
+  text-align: center;
+}
+
+/* Small responsive tweak: on narrow screens make cards full width-ish */
+@media (max-width: 420px) {
+  .exercise-card {
+    width: calc(100% - 32px);
+    min-height: auto;
+  }
+  .exercise-card img {
+    height: 180px;
+    max-height: 180px;
+  }
+}
