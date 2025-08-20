@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# UpLift - Fitness Exercise App
+
+**UpLift** is a modern fitness web application that allows users to explore exercises based on muscle groups, equipment, and more. Built with **React**, it leverages a powerful external API to deliver detailed exercise data, images, and instructions to help users stay on top of their fitness journey.
+
+# [Live Demo](https://upliftgym.netlify.app/)
+
+---
+
+## Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+To run the project locally:
+
+```
+git clone https://github.com/MohamadHalalGithA/UpLift.git
+cd UpLift
+npm install
+npm start
+Open http://localhost:3000 to view it in the browser.
+```
+
+# Project Structure
+```
+UpLift/
+├── public/
+├── src/
+│   ├── components/       # Reusable UI components
+│   ├── pages/            # Application pages like ExerciseDetail
+│   ├── utils/            # Helper functions like fetchData.js
+│   ├── assets/           # Images and static files
+│   ├── App.js            # Root component
+│   └── index.js          # React entry point
+```
+
+# Features
+
+✅ Filter exercises by muscle group, equipment, and name
+
+✅ Sort exercises alphabetically (A–Z / Z–A)
+
+✅ View detailed instructions, images, and primary/secondary muscle groups
+
+✅ Responsive design using Material UI
+
+✅ BMI Calculator
+
+✅ Smooth navigation via React Router
+
+#  Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+```
+npm start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Runs the app in development mode.
+Open http://localhost:3000
+ to view it in your browser.
+```
+```
+npm test
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Launches the test runner in interactive watch mode.
+Learn more
+```
+```
+npm run build
 
-### `npm test`
+Builds the app for production to the build folder.
+It bundles React in production mode and optimizes the build for best performance.
+```
+```
+npm run eject
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+⚠️ Note: This is a one-way operation.
+Learn more
+```
 
-### `npm run build`
+# API Reference
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This app uses data from the Exercise DB API
+ by Alejandro99aru found on RapidAPI
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+React + React Router
 
-### `npm run eject`
+Material UI (MUI)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Axios
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ExerciseDB API
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Netlify
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Deployment
 
-## Learn More
+Build the project and deploy it using your preferred method (e.g., GitHub Pages, Vercel, Netlify):
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm run build
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+The app is production-ready and can be served with any static site hosting service.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Contributing
 
-### Analyzing the Bundle Size
+Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+# Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Mohamad Halal
+ ### GitHub: @MohamadHalalGithA
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Email: mohamadhalal20@gmai.com
