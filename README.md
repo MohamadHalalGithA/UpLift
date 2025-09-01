@@ -1,10 +1,11 @@
 # [UpLift - Fitness Exercise App](https://upliftgym.netlify.app/) 
-(click to view)
 
 
 **UpLift** is a modern fitness web application that allows users to explore exercises based on muscle groups, equipment, and more. Built with **React**, it leverages a powerful external API to deliver detailed exercise data, images, and instructions to help users stay on top of their fitness journey.
 
-# [Live Demo](https://upliftgym.netlify.app/)
+### [Live Demo](https://upliftgym.netlify.app/)
+(click to view)
+
 
 ---
 
